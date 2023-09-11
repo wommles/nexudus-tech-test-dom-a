@@ -1,0 +1,32 @@
+
+.products-container{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.product.not-visible{
+    color: grey;
+}
+
+.product .name{
+    font-weight: 600;
+}
+
+.product .description{
+    font-style: italic;
+}
+
+@media (max-width: 1024px){
+    .product .visibility,
+    .product .description{
+        display: none;
+    }
+}
